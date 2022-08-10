@@ -1,0 +1,54 @@
+{
+  "title": "About Me",
+  "description": "I'm a freelance web developer from the Philippines who is passionate about building modern, simple, and responsive website.",
+  "tools": [
+    {
+      "name": "HTML",
+      "icon": "html5"
+    },
+    {
+      "name": "CSS",
+      "icon": "css3-alt"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "bootstrap"
+    },
+    {
+      "name": "JavaScript",
+      "icon": "js"
+    },
+    {
+      "name": "React",
+      "icon": "react"
+    },
+    {
+      "name": "PHP",
+      "icon": "php"
+    },
+    {
+      "name": "Joomla",
+      "icon": "joomla"
+    },
+    {
+      "name": "Wordpress",
+      "icon": "wordpress"
+    },
+    {
+      "name": "Elementor",
+      "icon": "elementor"
+    },
+    {
+      "name": "Git",
+      "icon": "git-alt"
+    },
+    {
+      "name": "Github",
+      "icon": "github-alt"
+    },
+    {
+      "name": "Figma",
+      "icon": "figma"
+    }
+  ]
+}
