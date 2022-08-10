@@ -1,6 +1,6 @@
 import MainLayout from '../../layouts/Main'
 import Profile from './../../assets/settings/profile.png'
-import Resume from './../../assets/documents/resume.pdf'
+import Resume from './../../assets/documents/Resume.pdf'
 import about from './../../schemas/about.json'
 
 const About = () => {
