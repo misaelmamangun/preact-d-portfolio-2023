@@ -3,7 +3,7 @@ import logo from './../../assets/settings/logo.png'
 const Hero = () => {
   return (
     <>
-      <div className='h-screen'>
+      <div className='md:h-screen'>
         <div className='container mx-auto px-4 h-full'>
           <div className='md:grid items-center grid-cols-2 h-full h-full gap-4'>
             <div>
