@@ -29,6 +29,7 @@ const Contact = () => {
                   name='firstName'
                   id='firstName'
                   className='p-2'
+                  disabled={true}
                 />
               </div>
               <div className='mb-4 grid'>
@@ -40,6 +41,7 @@ const Contact = () => {
                   name='lastName'
                   id='lastName'
                   className='p-2'
+                  disabled={true}
                 />
               </div>
             </div>
@@ -47,15 +49,30 @@ const Contact = () => {
               <label htmlFor='email' className='text-light-400'>
                 Email
               </label>
-              <input type='email' name='email' id='email' className='p-2' />
+              <input
+                type='email'
+                name='email'
+                id='email'
+                className='p-2'
+                disabled={true}
+              />
             </div>
             <div className='mb-4 grid'>
               <label htmlFor='message' className='text-light-400'>
                 Message
               </label>
-              <textarea name='message' id='message' className='p-2' />
+              <textarea
+                name='message'
+                id='message'
+                className='p-2'
+                disabled={true}
+              />
             </div>
-            <button type='submit' className='p-2 px-6 bg-light-400'>
+            <button
+              type='submit'
+              className='p-2 px-6 bg-light-400'
+              disabled={true}
+            >
               Send
             </button>
           </form>
