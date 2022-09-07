@@ -5,13 +5,21 @@ import contact from './../../schemas/contact.json'
 
 const Contact = () => {
   const [isDone, setIsDone] = useState(false)
-  const { title, infos } = contact
   const [details, setDetails] = useState({
     firstName: '',
     lastName: '',
     email: '',
     message: '',
   })
+
+  const clearFields = () => {
+    setDetails({
+      firstName: '',
+      lastName: '',
+      email: '',
+      message: '',
+    })
+  }
 
   const onChange = (e) => {
     setDetails({
@@ -38,15 +46,12 @@ const Contact = () => {
       .finally(() => {
         setTimeout(() => {
           setIsDone(false)
+          clearFields()
         }, 2000)
-        setDetails({
-          firstName: '',
-          lastName: '',
-          email: '',
-          message: '',
-        })
       })
   }
+
+  const { title, infos } = contact
 
   return (
     <MainLayout className='py-4'>
