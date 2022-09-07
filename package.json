@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@sanity/client": "^2.2.6",
+    "axios": "^0.27.2",
     "preact": "^10.9.0",
     "preact-router": "^4.1.0",
     "url": "^0.11.0"
