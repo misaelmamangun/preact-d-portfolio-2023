@@ -66,7 +66,7 @@ const Contact = () => {
         <div className='md:grid grid-cols-[1fr,2fr] mt-8 gap-4'>
           <div className='text-light-400'>
             {infos.map((info) => (
-              <div className='mb-4'>
+              <div className='mb-4' key={info.title}>
                 <h6 className='text-2xl'>{info.title}</h6>
                 <p>{info.value}</p>
               </div>

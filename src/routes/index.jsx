@@ -18,7 +18,7 @@ export const Routes = () => {
     <>
       <Router>
         {route.map(({ path, component }) => (
-          <Route path={path} component={component} />
+          <Route path={path} component={component} key={path} />
         ))}
       </Router>
     </>

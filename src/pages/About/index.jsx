@@ -36,7 +36,10 @@ const About = () => {
             </p>
             <div className='flex gap-2 mt-4 flex-wrap'>
               {tools.map((tool) => (
-                <div className='border-2 flex gap-4 items-center px-4 py-1'>
+                <div
+                  className='border-2 flex gap-4 items-center px-4 py-1'
+                  key={tool.icon}
+                >
                   <p className='text-2xl text-light-400'>{tool.name}</p>
                   <i
                     className={`fa-brands fa-${tool.icon} text-light-400 fa-4x`}
