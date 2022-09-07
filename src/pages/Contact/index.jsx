@@ -33,18 +33,18 @@ const Contact = () => {
       })
       .then(() => {
         setIsDone(true)
-        setDetails({
-          firstName: '',
-          lastName: '',
-          email: '',
-          message: '',
-        })
       })
       .catch((error) => console.log(error))
       .finally(() => {
         setTimeout(() => {
           setIsDone(false)
         }, 2000)
+        setDetails({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: '',
+        })
       })
   }
 
