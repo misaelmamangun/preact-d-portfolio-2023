@@ -4,7 +4,7 @@ import MainLayout from '../../layouts/Main'
 import contact from './../../schemas/contact.json'
 
 const Contact = () => {
-  const [isDone, setIsDone] = useState(true)
+  const [isDone, setIsDone] = useState(false)
   const { title, infos } = contact
   const [details, setDetails] = useState({
     firstName: '',
