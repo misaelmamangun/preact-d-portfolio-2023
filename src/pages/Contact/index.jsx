@@ -24,7 +24,10 @@ const Contact = () => {
     axios.defaults.headers.post['Content-Type'] = 'application/json'
     axios
       .post('https://formsubmit.co/ajax/1fe4ad93467280811e8907a2eb282488', {
-        details,
+        firstName: details.firstName,
+        lastName: details.lastName,
+        email: details.email,
+        message: details.message,
       })
       .then((response) => console.log(response))
       .catch((error) => console.log(error))
