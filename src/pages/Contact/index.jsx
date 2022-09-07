@@ -23,7 +23,7 @@ const Contact = () => {
     e.preventDefault()
     axios.defaults.headers.post['Content-Type'] = 'application/json'
     axios
-      .post('https://formsubmit.co/ajax/misaelpaulmamangun@gmail.com', {
+      .post('https://formsubmit.co/ajax/misaelpaul3@gmail.com', {
         details,
       })
       .then((response) => console.log(response))
