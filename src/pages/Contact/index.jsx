@@ -4,6 +4,7 @@ import MainLayout from '../../layouts/Main'
 import contact from './../../schemas/contact.json'
 
 const Contact = () => {
+  const [isDone, setIsDone] = useState(true)
   const { title, infos } = contact
   const [details, setDetails] = useState({
     firstName: '',
@@ -21,6 +22,7 @@ const Contact = () => {
 
   const onSubmit = (e) => {
     e.preventDefault()
+    setIsDone(false)
     axios.defaults.headers.post['Content-Type'] = 'application/json'
     axios
       .post('https://formsubmit.co/ajax/1fe4ad93467280811e8907a2eb282488', {
@@ -29,8 +31,21 @@ const Contact = () => {
         email: details.email,
         message: details.message,
       })
-      .then((response) => console.log(response))
+      .then(() => {
+        setIsDone(true)
+        setDetails({
+          firstName: '',
+          lastName: '',
+          email: '',
+          message: '',
+        })
+      })
       .catch((error) => console.log(error))
+      .finally(() => {
+        setTimeout(() => {
+          setIsDone(false)
+        }, 2000)
+      })
   }
 
   return (
@@ -49,6 +64,16 @@ const Contact = () => {
             ))}
           </div>
           <form onSubmit={onSubmit}>
+            {isDone ? (
+              <div
+                class='bg-green-100 border border-light-green-400 text-green-700 mb-4 px-4 py-3 rounded relative'
+                role='alert'
+              >
+                <span class='block sm:inline'>
+                  Thank you for your message. It has been sent.
+                </span>
+              </div>
+            ) : null}
             <div className='md:grid grid-cols-[1fr,1fr] gap-2'>
               <div className='mb-4 grid'>
                 <label htmlFor='firstName' className='text-light-400'>
