@@ -17,7 +17,7 @@ const Hero = () => {
               </p>
             </div>
             <div>
-              <img src={logo} />
+              <img src={logo} alt='logo' />
             </div>
           </div>
         </div>
