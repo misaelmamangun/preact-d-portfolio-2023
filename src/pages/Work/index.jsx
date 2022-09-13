@@ -27,7 +27,7 @@ const Work = ({ slug }) => {
       .catch(console.error)
   }, [])
 
-  const { title, mainImage, link } = work || {}
+  const { title, mainImage } = work || {}
 
   return (
     <MainLayout className='py-4'>
