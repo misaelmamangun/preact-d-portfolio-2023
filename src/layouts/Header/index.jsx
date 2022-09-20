@@ -12,7 +12,9 @@ const Header = () => {
           <div className='flex flex-wrap justify-between items-center'>
             <div>
               <h6 className='text-lg font-semibold dark:text-light-400'>
-                <a href='/'>Misael Paul</a>
+                <a href='/' className='uppercase '>
+                  Misael Paul
+                </a>
               </h6>
             </div>
 
