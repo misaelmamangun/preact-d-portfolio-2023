@@ -48,8 +48,15 @@ const About = () => {
               ))}
             </div>
           </div>
-          <div className='flex justify-center'>
-            <img src={Profile} className='object-contain' />
+          <div className='flex justify-center items-end'>
+            <img
+              fetchpriority='high'
+              width={500}
+              height={500}
+              alt='profile picture'
+              src={Profile}
+              className='object-contain'
+            />
           </div>
         </div>
       </div>

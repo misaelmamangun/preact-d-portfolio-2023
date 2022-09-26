@@ -40,7 +40,7 @@ const Works = () => {
                 className='bg-gray-200 break-inside-avoid relative'
                 key={slug.current}
               >
-                <img src={mainImage.asset.url} />
+                <img alt={title} src={mainImage.asset.url} />
                 <div className='hover:opacity-100 ease-linear duration-300 opacity-0 static'>
                   <div className='absolute w-full h-full flex flex-col items-center justify-center top-0 bg-gray-800 bg-opacity-70'>
                     <h2 className='text-2xl text-light-400 uppercase font-bold'>
