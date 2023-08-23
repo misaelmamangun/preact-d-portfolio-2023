@@ -136,7 +136,11 @@ const Contact = () => {
                 onChange={onChange}
               />
             </div>
-            <button type="submit" className="p-2 px-6 bg-light-400">
+            <button
+              type="submit"
+              disabled={isLoading}
+              className="p-2 px-6 bg-light-400"
+            >
               {isLoading ? (
                 <div role="status">
                   <svg
