@@ -35,7 +35,7 @@ const Contact = () => {
     setShowMessage(false);
     axios.defaults.headers.post["Content-Type"] = "application/json";
     axios
-      .post("https://formsubmit.co/ajax/1fe4ad93467280811e8907a2eb282488", {
+      .post("https://formsubmit.co/ajax/misaelpaulmamangun@gmail.com", {
         firstName: details.firstName,
         lastName: details.lastName,
         email: details.email,
@@ -95,7 +95,6 @@ const Contact = () => {
                   className="p-2"
                   value={details.firstName}
                   onChange={onChange}
-                  disabled
                 />
               </div>
               <div className="mb-4 grid">
@@ -109,7 +108,6 @@ const Contact = () => {
                   className="p-2"
                   value={details.lastName}
                   onChange={onChange}
-                  disabled
                 />
               </div>
             </div>
@@ -124,7 +122,6 @@ const Contact = () => {
                 className="p-2"
                 value={details.email}
                 onChange={onChange}
-                disabled
               />
             </div>
             <div className="mb-4 grid">
@@ -137,14 +134,9 @@ const Contact = () => {
                 className="p-2"
                 value={details.message}
                 onChange={onChange}
-                disabled
               />
             </div>
-            <button
-              type="submit"
-              disabled={true}
-              className="p-2 px-6 bg-light-400"
-            >
+            <button type="submit" className="p-2 px-6 bg-light-400">
               {isLoading ? (
                 <div role="status">
                   <svg
