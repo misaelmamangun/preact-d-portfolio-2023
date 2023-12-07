@@ -10,6 +10,6 @@ If you have any questions, suggestions, or would like to collaborate, feel free 
 
 **Email:** misaelpaulmamangun@gmail.com
 
-**LinkedIn:** [Your LinkedIn Profile](https://www.linkedin.com/in/misaelpaulmamangun/)
+**LinkedIn:** (https://www.linkedin.com/in/misaelpaulmamangun/)
 
 ---
