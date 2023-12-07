@@ -1,10 +1,15 @@
+import { Fragment } from "preact";
 import { useState } from "preact/hooks";
 // Models
 import settings from "src/schemas/settings.json";
 // Assets
 import logo from "src/assets/img/logo.png";
-import { Fragment } from "preact";
 
+/**
+ * Renders the header component.
+ *
+ * @return {JSX.Element} The JSX element representing the header.
+ */
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { nav } = settings;
