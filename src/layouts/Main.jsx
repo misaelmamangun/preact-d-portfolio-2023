@@ -1,5 +1,6 @@
-import Footer from '../Footer'
-import Header from '../Header'
+// UI Components
+import Footer from "src/layouts/Footer";
+import Header from "src/layouts/Header";
 
 const MainLayout = ({ children, className }) => {
   return (
@@ -8,7 +9,7 @@ const MainLayout = ({ children, className }) => {
       <main className={`min-h-screen ${className}`}>{children}</main>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default MainLayout
+export default MainLayout;

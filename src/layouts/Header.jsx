@@ -1,13 +1,16 @@
 import { useState } from "preact/hooks";
-import nav from "./../../schemas/nav.json";
-import logo from "./../../assets/img/logo.png";
+// Models
+import settings from "src/schemas/settings.json";
+// Assets
+import logo from "src/assets/img/logo.png";
+import { Fragment } from "preact";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const { routes } = nav;
+  const { nav } = settings;
 
   return (
-    <>
+    <Fragment>
       <header className="dark:bg-dark-600 py-4 border-b-2 sticky top-0 z-10">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-between items-center">
@@ -49,7 +52,7 @@ const Header = () => {
               } md:block md:w-auto w-full`}
             >
               <ul className="md:flex md:gap-6 md:divide-none divide-y">
-                {routes.map(({ title, link }) => (
+                {nav.map(({ title, link }) => (
                   <li key={title}>
                     <a
                       href={link}
@@ -65,7 +68,7 @@ const Header = () => {
           </div>
         </div>
       </header>
-    </>
+    </Fragment>
   );
 };
 

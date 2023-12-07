@@ -1,7 +1,12 @@
+// Libraries
 import { useState } from "preact/hooks";
 import axios from "axios";
-import MainLayout from "../../layouts/Main";
-import contact from "./../../schemas/contact.json";
+// UI Components
+import MainLayout from "src/layouts/Main";
+// Models
+import contact from "src/schemas/contact.json";
+// Services
+import { formSubmit } from "src/services/api/formSubmitService";
 
 const Contact = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -29,30 +34,24 @@ const Contact = () => {
     });
   };
 
-  const onSubmit = (e) => {
+  const onSubmit = async (e) => {
     e.preventDefault();
     setIsLoading(true);
     setShowMessage(false);
     axios.defaults.headers.post["Content-Type"] = "application/json";
-    axios
-      .post("https://formsubmit.co/ajax/misaelpaulmamangun@gmail.com", {
-        firstName: details.firstName,
-        lastName: details.lastName,
-        email: details.email,
-        message: details.message,
-      })
-      .then(() => {
-        setIsLoading(true);
-        setShowMessage(true);
-      })
-      .catch((error) => console.log(error))
-      .finally(() => {
-        setTimeout(() => {
-          setIsLoading(false);
-          setShowMessage(false);
-          clearFields();
-        }, 2000);
-      });
+    try {
+      await formSubmit();
+      setIsLoading(true);
+      setShowMessage(true);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setTimeout(() => {
+        setIsLoading(false);
+        setShowMessage(false);
+        clearFields();
+      }, 2000);
+    }
   };
 
   const { title, infos } = contact;

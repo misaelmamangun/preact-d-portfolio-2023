@@ -1,8 +1,26 @@
 {
   "title": "Misael Paul",
   "url": "/",
-  "description": "Portfolio",
-  "author": "Misael Paul",
+  "description": "I'm a frontend web developer from the Philippines who is passionate about building simple, modern, and responsive website.",
+  "author": "Misael Paul Mamangun",
   "email": "misaelpaulmamangun@gmail.com",
-  "phone": "+63 900 909 9090"
+  "phone": "+63 908 969 0636",
+  "nav": [
+    {
+      "title": "Home",
+      "link": "/"
+    },
+    {
+      "title": "About",
+      "link": "/about"
+    },
+    {
+      "title": "Contact",
+      "link": "/contact"
+    },
+    {
+      "title": "Works",
+      "link": "/works"
+    }
+  ]
 }

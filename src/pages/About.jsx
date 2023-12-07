@@ -1,7 +1,10 @@
-import MainLayout from "../../layouts/Main";
-import Profile from "./../../assets/img/profile.png";
-import Resume from "./../../assets/documents/Resume.pdf";
-import about from "./../../schemas/about.json";
+// UI Components
+import MainLayout from "src/layouts/Main";
+// Model
+import about from "src/schemas/about.json";
+// Assets
+import Profile from "src/assets/img/profile.png";
+import Resume from "src/assets/documents/Resume.pdf";
 
 const About = () => {
   const { tools, title, description } = about;

@@ -6,19 +6,25 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest"
   },
   "dependencies": {
     "@sanity/client": "^2.2.6",
     "axios": "^0.27.2",
     "preact": "^10.9.0",
     "preact-router": "^4.1.0",
+    "prop-types": "^15.8.1",
     "url": "^0.11.0"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.3.0",
+    "@testing-library/jest-dom": "^6.1.5",
+    "@testing-library/preact": "^3.2.3",
+    "jsdom": "^23.0.1",
     "vite": "^3.0.0",
     "vite-plugin-windicss": "^1.8.7",
+    "vitest": "^1.0.1",
     "windicss": "^3.5.6"
   }
 }
