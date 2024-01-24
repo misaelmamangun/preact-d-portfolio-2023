@@ -1,6 +1,6 @@
 // UI Components
-import Footer from "src/layouts/Footer";
-import Header from "src/layouts/Header";
+import Footer from "src/components/Footer";
+import Header from "src/components/Header";
 
 /**
  * Render the main layout of the application.

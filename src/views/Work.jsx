@@ -2,7 +2,7 @@
 import { useEffect, useState } from "preact/hooks";
 import PropTypes from "prop-types";
 // UI Components
-import MainLayout from "src/layouts/Main";
+import MainLayout from "src/components/MainLayout";
 // Services
 import { fetchSingleWorks } from "src/services/api/sanityService";
 

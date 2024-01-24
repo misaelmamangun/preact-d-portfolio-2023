@@ -1,9 +1,9 @@
 // Models
 import settings from "src/schemas/settings.json";
 
-const Footer = () => {
+const AppFooter = () => {
   const { author } = settings;
-
+  
   return (
     <>
       <footer className="border-t-2">
@@ -17,4 +17,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default AppFooter;

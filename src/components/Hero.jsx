@@ -3,7 +3,7 @@ import setting from "src/schemas/settings.json";
 // Assets
 import logo from "src/assets/img/logo.png";
 
-const Hero = () => {
+const AppHero = () => {
   return (
     <>
       <div className="md:h-screen">
@@ -25,4 +25,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default AppHero;

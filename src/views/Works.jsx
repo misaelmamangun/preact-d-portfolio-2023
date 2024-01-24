@@ -1,7 +1,7 @@
 // Libraries
 import { useEffect, useState } from "preact/hooks";
 // UI Components
-import MainLayout from "src/layouts/Main";
+import MainLayout from "src/components/MainLayout";
 import WorkCard from "src/components/WorkCard";
 // Services
 import { fetchAllWorks } from "src/services/api/sanityService";

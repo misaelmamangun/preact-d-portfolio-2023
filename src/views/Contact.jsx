@@ -2,7 +2,7 @@
 import { useState } from "preact/hooks";
 import axios from "axios";
 // UI Components
-import MainLayout from "src/layouts/Main";
+import MainLayout from "src/components/MainLayout";
 // Models
 import contact from "src/schemas/contact.json";
 // Services

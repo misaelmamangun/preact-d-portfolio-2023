@@ -10,7 +10,7 @@ import logo from "src/assets/img/logo.png";
  *
  * @return {JSX.Element} The JSX element representing the header.
  */
-const Header = () => {
+const AppHeader = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { nav } = settings;
 
@@ -77,4 +77,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default AppHeader;
