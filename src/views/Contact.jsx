@@ -40,7 +40,7 @@ const Contact = () => {
     setShowMessage(false);
     axios.defaults.headers.post["Content-Type"] = "application/json";
     try {
-      await formSubmit();
+      await formSubmit(details);
       setIsLoading(true);
       setShowMessage(true);
     } catch (error) {
