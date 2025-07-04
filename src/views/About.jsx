@@ -4,7 +4,6 @@ import MainLayout from 'src/components/MainLayout';
 import about from 'src/schemas/about.json';
 // Assets
 import Profile from 'src/assets/img/profile.png';
-import Resume from 'src/assets/documents/Resume.pdf';
 
 const About = () => {
   const { tools, title, description } = about;
