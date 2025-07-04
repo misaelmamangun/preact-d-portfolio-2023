@@ -137,7 +137,7 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              disabled={isLoading}
+              disabled={true}
               className="p-2 px-6 bg-light-400"
             >
               {isLoading ? (
