@@ -23,17 +23,6 @@ const About = () => {
             </h2>
             <br />
             <p className='text-light-400'>{description}</p>
-            <div className='my-6'>
-              <a
-                href={Resume}
-                download='Resume'
-                target='_blank'
-                className='p-3 bg-light-400'
-              >
-                <span className='mr-2 text-xl'>Resume</span>
-                <i class='fa-solid fa-id-card fa-xl'></i>
-              </a>
-            </div>
             <p className='text-2xl text-light-400 mt-2 uppercase'>
               Tools I use
             </p>
